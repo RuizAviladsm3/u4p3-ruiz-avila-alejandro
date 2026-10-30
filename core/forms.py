@@ -15,10 +15,8 @@ class ServicioForm(forms.ModelForm):
         # model: el formulario se genera a partir del modelo Servicio
         model = Servicio
         # fields: los mismos 4 campos; como categoria ahora es llave foránea, Django pone un <select>
-        fields = ['titulo', 'descripcion', 'precio', 'categoria_ref']
-        labels = {
-            'categoria_ref': 'Categoria',
-        }
+        fields = ['titulo', 'descripcion', 'precio', 'categoria']
+
 
     # clean_precio: tu validación de la Semana 5; no cambia
     def clean_precio(self):
