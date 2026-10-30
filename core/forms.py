@@ -11,11 +11,12 @@ from django.core.exceptions import ValidationError
 class ServicioForm(forms.ModelForm):
     # Meta: clase interna donde le dices a Django de qué modelo y qué campos generar
     class Meta:
-        # model: el modelo del que se generan los campos del formulario
         model = Servicio
-        # fields: lista de campos del modelo que sí aparecen en el formulario
-        # "propietario" queda fuera a propósito: lo asigna la vista, no el usuario
-        fields = ['titulo', 'descripcion', 'precio', 'categoria']
+        # Asegúrate de incluir 'categoria_ref' y NO 'categoria'
+        fields = ['titulo', 'descripcion', 'precio', 'categoria_ref'] 
+        labels = {
+            'categoria_ref': 'Categoría',
+        }
 
     # clean_precio: Django lo llama automáticamente al validar el campo "precio"
     def clean_precio(self):

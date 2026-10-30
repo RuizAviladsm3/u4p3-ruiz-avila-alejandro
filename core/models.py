@@ -4,6 +4,7 @@ from django.db import models
 # User: el modelo de usuario que Django ya trae incluido (login, contraseñas, sesiones)
 from django.contrib.auth.models import User
 
+# ******************* ESTA CLASE CATEGORIA FUE LA QUE SE CAMBIO EN EL PASO 04
 # class Categoria: NUEVA tabla "core_categoria"; va ARRIBA de Servicio porque Servicio la va a usar
 class Categoria(models.Model):
     # nombre: texto corto y obligatorio; unique=True impide dos categorías con el mismo nombre
@@ -38,7 +39,7 @@ class Servicio(models.Model):
     precio = models.DecimalField(max_digits=8, decimal_places=2)
 
     # categoria: la columna de TEXTO vieja; se queda por ahora para no perder lo que ya escribiste
-    categoria = models.CharField(max_length=60)
+    categoria = models.CharField(max_length=60, null=True, blank=True)
 
     # categoria_ref: NUEVA llave foránea a Categoria (temporal; en el paso 04 se renombra a "categoria")
     # on_delete=PROTECT: MySQL no deja borrar una categoría si todavía tiene servicios
