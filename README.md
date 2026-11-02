@@ -1,33 +1,17 @@
-<!-- título del repo: cambia por tus nombres reales -->
-# U4S8 — Ruiz Avila Alejandro
+# U4P3 — Ruiz Avila Alejandro
 
-<!-- sección con la URL pública de Render -->
 ## Demo en vivo (producción)
-<!-- tu dirección real de Render de esta práctica -->
-https://u4s8-hernandez-nunez-maria-jose.onrender.com
+https://u4p3-ruiz-avila-alejandro.onrender.com/
 
-<!-- sección que explica el proyecto a quien lo visite -->
 ## Qué hace este proyecto
-<!-- reemplaza el texto entre corchetes por tu descripción -->
-Proyecto terminado con backup
+Práctica final de la Unidad 4: a mi CRUD de servicios le voy a agregar las tablas de categorías, 
+facturas y detalle de factura, y voy a escribir seis consultas SQL a mano que se muestran en una página de reportes, publicada en Render.
 
-<!-- sección con las tecnologías usadas -->
 ## Stack técnico
-<!-- las 4 herramientas del curso -->
 Django + MySQL (Aiven) + Tailwind CSS + Render
 
-<!-- sección con la prueba de seguridad de la Semana 6 -->
-## Cómo se prueba el aislamiento por usuario
-<!-- pega aquí la explicación que escribiste en el README de la Semana 6 -->
-Paginación, búsqueda simple y estado vacío agregados al listado, se agrego el backup/
-
-<!-- sección con el recorrido del curso -->
 ## Historial de unidades
-<!-- Unidad 1 -->
 - Unidad 1: portafolio estático con HTML5 + Tailwind
-<!-- Unidad 2 -->
 - Unidad 2: modelo Servicio migrado a MySQL, deploy dinámico en Render
-<!-- Unidad 3 -->
 - Unidad 3: CRUD completo con ModelForms + autenticación y sesiones
-<!-- Unidad 4 -->
 - Unidad 4: paginación, búsqueda, UI review y defensa final
